@@ -6,39 +6,45 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You come across two doors of movies",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text: "Deadpool",
+                    nextLevel: "deadwoods",
                 },
 
                 {
-                    text: "Keep on moving",
-                    nextLevel: "field",
+                    text: "Black Panther",
+                    nextLevel: "wakanda",
                 },
             ]
         },
 
-        cave: {
+        wakanda: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "You come across two villains, who are you fighting first?",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "Will it be Klaws ",
+                    nextLevel: "klaws",
+                },    {
+                    text: "Or will it be Cable",
+                    nextLevel: "cable",
                 },
             ]
         },
 
-        field: {
-            message: "Some adventurer you are...",
+        klaws: {
+            message: "Then who is your partner?",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
-                },
+                    text: "Okoye",
+                    nextLevel: "fight",
+                },  {
+                    text:"Or Shuri",
+                    nextLevel:"lab"
+                }
             ]
         },
 
